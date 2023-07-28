@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up form</title>
+    <link rel="stylesheet" href="form.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form action="/signup" method="post">
+        <div class="title">Sign-Up</div>
+        <div class="input-box underline">
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+          <div class="underline"></div>
+        </div>
+        <div class="input-box underline">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+          <div class="underline"></div>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter Your Password"
+            required
+          />
+          <div class="underline"></div>
+        </div>
+        <div class="input-box button">
+          <input type="submit" value="Continue" />
+          {{! <a href="/signup">create an account</a> }}
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
